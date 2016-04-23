@@ -11,6 +11,9 @@ sudo apt-get update
 echo "==> Installing git..."
 sudo apt-get install -y git
 
+echo "==> Installing nodejs..."
+sudo apt-get install -y nodejs
+
 echo "==> Installing Ruby dependencies..."
 sudo apt-get install -y build-essential bison openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev autoconf libc6-dev ssl-cert subversion ruby-dev
 
