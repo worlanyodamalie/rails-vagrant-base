@@ -2,8 +2,8 @@
 
 # Configuration:
 #   Which versions of Ruby and Rails do you want to install?
-RUBY=2.3.0
-RAILS=4.2.6
+RUBY=2.3.1
+RAILS=5.0.0.1
 # /Configuration
 
 sudo apt-get update
@@ -30,7 +30,7 @@ echo "eval \"\$(rbenv init -)\"" >> ~/.bashrc
 source ~/.bashrc
 
 mkdir -p ~/.rbenv
-sudo chown -R vagrant ~/.rbenv
+sudo chown -R ubuntu ~/.rbenv
 if [ -f ~/.rbenv/versions/$RUBY/bin/ruby ]; then
 	echo "==> Ruby ${RUBY} is already installed..."
 else
@@ -42,6 +42,7 @@ cd /vagrant
 rbenv local $RUBY
 rbenv rehash
 
+su ubuntu
 gem install bundler --no-rdoc --no-ri
 gem install rails --version $RAILS --no-rdoc --no-ri
 rbenv rehash
