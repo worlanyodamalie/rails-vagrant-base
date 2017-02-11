@@ -14,10 +14,10 @@ and `vagrant up` your VM.
 This `Vagrantfile` has been tested using *Vagrant 1.8.1* and *VirtualBox 5.0.10*.
 
 ## Configuration
-Out-of-the-box you will get *Ruby 2.3.0* and *Rails 4.2.6*. You can configure your preferred versions in the `vagrant.bootstrap.sh` script by setting the variables in the beginning of the file, e.g.:
+Out-of-the-box you will get *Ruby 2.3.1* and *Rails 5.0.0.1*. You can configure your preferred versions in the `vagrant.bootstrap.sh` script by setting the variables in the beginning of the file, e.g.:
 
-	RUBY=2.2.0
-	RAILS=4.2.5
+	RUBY=2.3.1
+	RAILS=5.0.0.1
 
 ## License
 No license. Just use it, change it, fork it, modify it, sell it, whatever... I hope this saves you some time. If you find any errors or bugs, please create an issue at GitHub. Thanks.
